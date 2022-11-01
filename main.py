@@ -9,4 +9,7 @@ corrected_words = []
 for _ in words:
     corrected_words.append(TextBlob(_))
     print("Your wrong word: ", words)
-    print("Corrected words are: ")
+    print("The corrected spelling to your words are: ")
+for i in corrected_words:
+    print(i.correct(), end=" ")
+
